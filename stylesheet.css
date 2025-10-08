@@ -1,0 +1,417 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><style>/* Perbaikan untuk teks dan ikon di mode gelap */
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #94a3b8 !important;
+    opacity: 0.7;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #94a3b8 !important;
+    opacity: 0.7;
+}
+
+/* Memastikan semua teks di card terlihat jelas di mode gelap */
+body.dark-mode .card-body,
+body.dark-mode .card-header {
+    color: #e2e8f0 !important;
+}
+
+body.dark-mode .text-muted {
+    color: #94a3b8 !important;
+}
+
+body.dark-mode .empty-state p {
+    color: #94a3b8 !important;
+}
+
+body.dark-mode .empty-state i {
+    color: #475569 !important;
+}
+
+/* Memastikan semua ikon terlihat jelas di mode gelap */
+body.dark-mode i.bi {
+    color: var(--neon-primary) !important;
+    text-shadow: 0 0 5px rgba(255, 183, 77, 0.5);
+}
+
+body.dark-mode .bi-calendar-event,
+body.dark-mode .bi-tag,
+body.dark-mode .bi-trash,
+body.dark-mode .bi-pencil,
+body.dark-mode .bi-printer,
+body.dark-mode .bi-building,
+body.dark-mode .bi-image,
+body.dark-mode .bi-inbox,
+body.dark-mode .bi-receipt,
+body.dark-mode .bi-calculator,
+body.dark-mode .bi-bar-chart,
+body.dark-mode .bi-hourglass-split,
+body.dark-mode .bi-recycle,
+body.dark-mode .bi-search,
+body.dark-mode .bi-sort-down,
+body.dark-mode .bi-calendar-range,
+body.dark-mode .bi-graph-up,
+body.dark-mode .bi-graph-down,
+body.dark-mode .bi-list-ul,
+body.dark-mode .bi-sort-alpha-down,
+body.dark-mode .bi-sort-alpha-up,
+body.dark-mode .bi-graph-up-arrow,
+body.dark-mode .bi-graph-down-arrow,
+body.dark-mode .bi-calendar3,
+body.dark-mode .bi-calendar-month,
+body.dark-mode .bi-calendar-week,
+body.dark-mode .bi-calendar-day,
+body.dark-mode .bi-calendar-plus,
+body.dark-mode .bi-check-all,
+body.dark-mode .bi-x-circle,
+body.dark-mode .bi-file-earmark-text,
+body.dark-mode .bi-exclamation-triangle,
+body.dark-mode .bi-pause-fill,
+body.dark-mode .bi-play-fill,
+body.dark-mode .bi-arrow-clockwise,
+body.dark-mode .bi-cash-stack,
+body.dark-mode .bi-wallet2,
+body.dark-mode .bi-piggy-bank,
+body.dark-mode .bi-box-seam,
+body.dark-mode .bi-cart-plus,
+body.dark-mode .bi-percent,
+body.dark-mode .bi-plus-circle,
+body.dark-mode .bi-moon-stars-fill,
+body.dark-mode .bi-sun-fill {
+    color: var(--neon-primary) !important;
+    text-shadow: 0 0 5px rgba(255, 183, 77, 0.5);
+}
+
+/* Perbaikan untuk tampilan mobile */
+@media (max-width: 768px) {
+    body.dark-mode .header h1 {
+        color: var(--neon-primary) !important;
+        text-shadow: 0 0 10px rgba(255, 183, 77, 0.7);
+    }
+    
+    body.dark-mode .header p {
+        color: #a0aec0 !important;
+    }
+    
+    body.dark-mode .nav-tabs .nav-link {
+        color: #94a3b8 !important;
+    }
+    
+    body.dark-mode .nav-tabs .nav-link.active {
+        color: var(--neon-primary) !important;
+    }
+    
+    body.dark-mode .form-label {
+        color: #cbd5e0 !important;
+    }
+    
+    body.dark-mode .btn-light {
+        background-color: #334155 !important;
+        color: #e2e8f0 !important;
+        border-color: #475569 !important;
+    }
+    
+    body.dark-mode .btn-light:hover {
+        background-color: #475569 !important;
+    }
+    
+    body.dark-mode .input-group-text {
+        background-color: #334155 !important;
+        border-color: #475569 !important;
+        color: #94a3b8 !important;
+    }
+    
+    body.dark-mode .dropdown-menu {
+        background-color: #1e2936 !important;
+        color: #e2e8f0 !important;
+    }
+    
+    body.dark-mode .dropdown-item {
+        color: #e2e8f0 !important;
+    }
+    
+    body.dark-mode .dropdown-item:hover {
+        background-color: #334155 !important;
+        color: var(--neon-primary) !important;
+    }
+    
+    body.dark-mode .dropdown-item.active {
+        background-color: #334155 !important;
+        color: var(--neon-primary) !important;
+    }
+}
+
+/* Perbaikan untuk tampilan Android */
+@media (hover: none) and (pointer: coarse) {
+    /* Meningkatkan kontras untuk mode gelap di layar sentuh */
+    body.dark-mode {
+        background: linear-gradient(135deg, #0f172a 0%, #020617 100%) !important;
+    }
+    
+    body.dark-mode .card {
+        background-color: #1e293b !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+    }
+    
+    body.dark-mode .form-control {
+        background-color: #334155 !important;
+        border-color: #475569 !important;
+        color: #f1f5f9 !important;
+    }
+    
+    body.dark-mode .form-control:focus {
+        background-color: #334155 !important;
+        border-color: var(--neon-primary) !important;
+        box-shadow: 0 0 0 3px rgba(255, 183, 77, 0.3) !important;
+        color: #f1f5f9 !important;
+    }
+    
+    body.dark-mode .btn {
+        font-weight: 600 !important;
+    }
+    
+    body.dark-mode .btn-primary {
+        background-color: var(--neon-primary) !important;
+        box-shadow: 0 4px 12px rgba(255, 183, 77, 0.4) !important;
+    }
+    
+    body.dark-mode .btn-primary:hover {
+        background-color: #e66f00 !important;
+        box-shadow: 0 6px 16px rgba(255, 183, 77, 0.5) !important;
+    }
+    
+    body.dark-mode .btn-success {
+        background-color: var(--neon-success) !important;
+        box-shadow: 0 4px 12px rgba(0, 255, 136, 0.4) !important;
+    }
+    
+    body.dark-mode .btn-success:hover {
+        background-color: #00cc6a !important;
+        box-shadow: 0 6px 16px rgba(0, 255, 136, 0.5) !important;
+    }
+    
+    body.dark-mode .btn-danger {
+        background-color: var(--neon-danger) !important;
+        box-shadow: 0 4px 12px rgba(255, 71, 87, 0.4) !important;
+    }
+    
+    body.dark-mode .btn-danger:hover {
+        background-color: #cc0030 !important;
+        box-shadow: 0 6px 16px rgba(255, 71, 87, 0.5) !important;
+    }
+    
+    body.dark-mode .btn-light {
+        background-color: #334155 !important;
+        border-color: #475569 !important;
+        color: #f1f5f9 !important;
+    }
+    
+    body.dark-mode .btn-light:hover {
+        background-color: #475569 !important;
+    }
+    
+    body.dark-mode .nav-tabs .nav-link {
+        color: #94a3b8 !important;
+    }
+    
+    body.dark-mode .nav-tabs .nav-link.active {
+        color: var(--neon-primary) !important;
+        border-bottom: 2px solid var(--neon-primary) !important;
+    }
+    
+    body.dark-mode .nav-tabs .nav-link:hover {
+        color: var(--neon-primary) !important;
+        background-color: rgba(255, 183, 77, 0.05) !important;
+    }
+    
+    body.dark-mode .table {
+        color: #f1f5f9 !important;
+    }
+    
+    body.dark-mode .table thead th {
+        color: #f1f5f9 !important;
+        border-bottom: 2px solid #475569 !important;
+    }
+    
+    body.dark-mode .table td, 
+    body.dark-mode .table th {
+        border-color: #475569 !important;
+    }
+    
+    body.dark-mode .table tbody tr:nth-child(even) {
+        background-color: #334155 !important;
+    }
+    
+    body.dark-mode .table tbody tr:hover {
+        background-color: #475569 !important;
+    }
+    
+    body.dark-mode .dropdown-menu {
+        background-color: #1e293b !important;
+        border: 1px solid #475569 !important;
+    }
+    
+    body.dark-mode .dropdown-item {
+        color: #f1f5f9 !important;
+    }
+    
+    body.dark-mode .dropdown-item:hover, 
+    body.dark-mode .dropdown-item:focus {
+        background-color: #334155 !important;
+        color: var(--neon-primary) !important;
+    }
+    
+    body.dark-mode .dropdown-item.active, 
+    body.dark-mode .dropdown-item:active {
+        background-color: #334155 !important;
+        color: var(--neon-primary) !important;
+    }
+    
+    body.dark-mode .modal-content {
+        background-color: #1e293b !important;
+        color: #f1f5f9 !important;
+    }
+    
+    body.dark-mode .modal-header {
+        border-bottom: 1px solid #475569 !important;
+    }
+    
+    body.dark-mode .modal-footer {
+        border-top: 1px solid #475569 !important;
+    }
+    
+    body.dark-mode .close {
+        color: #f1f5f9 !important;
+    }
+    
+    body.dark-mode .form-select {
+        background-color: #334155 !important;
+        border-color: #475569 !important;
+        color: #f1f5f9 !important;
+    }
+    
+    body.dark-mode .form-select:focus {
+        border-color: var(--neon-primary) !important;
+        box-shadow: 0 0 0 3px rgba(255, 183, 77, 0.3) !important;
+    }
+    
+    body.dark-mode .input-group-text {
+        background-color: #334155 !important;
+        border-color: #475569 !important;
+        color: #94a3b8 !important;
+    }
+    
+    body.dark-mode .form-check-input:checked {
+        background-color: var(--neon-primary) !important;
+        border-color: var(--neon-primary) !important;
+    }
+    
+    body.dark-mode .form-check-input:focus {
+        border-color: var(--neon-primary) !important;
+        box-shadow: 0 0 0 0.25rem rgba(255, 183, 77, 0.25) !important;
+    }
+    
+    body.dark-mode .form-check-label {
+        color: #f1f5f9 !important;
+    }
+    
+    body.dark-mode .badge {
+        color: #f1f5f9 !important;
+    }
+    
+    body.dark-mode .alert {
+        background-color: #334155 !important;
+        border-color: #475569 !important;
+        color: #f1f5f9 !important;
+    }
+    
+    body.dark-mode .alert-primary {
+        background-color: rgba(255, 183, 77, 0.1) !important;
+        border-color: var(--neon-primary) !important;
+        color: var(--neon-primary) !important;
+    }
+    
+    body.dark-mode .alert-success {
+        background-color: rgba(0, 255, 136, 0.1) !important;
+        border-color: var(--neon-success) !important;
+        color: var(--neon-success) !important;
+    }
+    
+    body.dark-mode .alert-danger {
+        background-color: rgba(255, 71, 87, 0.1) !important;
+        border-color: var(--neon-danger) !important;
+        color: var(--neon-danger) !important;
+    }
+    
+    body.dark-mode .alert-warning {
+        background-color: rgba(255, 165, 2, 0.1) !important;
+        border-color: var(--neon-warning) !important;
+        color: var(--neon-warning) !important;
+    }
+    
+    body.dark-mode .alert-info {
+        background-color: rgba(112, 161, 255, 0.1) !important;
+        border-color: var(--neon-info) !important;
+        color: var(--neon-info) !important;
+    }
+    
+    body.dark-mode .text-primary {
+        color: var(--neon-primary) !important;
+    }
+    
+    body.dark-mode .text-success {
+        color: var(--neon-success) !important;
+    }
+    
+    body.dark-mode .text-danger {
+        color: var(--neon-danger) !important;
+    }
+    
+    body.dark-mode .text-warning {
+        color: var(--neon-warning) !important;
+    }
+    
+    body.dark-mode .text-info {
+        color: var(--neon-info) !important;
+    }
+    
+    body.dark-mode .bg-primary {
+        background-color: var(--neon-primary) !important;
+    }
+    
+    body.dark-mode .bg-success {
+        background-color: var(--neon-success) !important;
+    }
+    
+    body.dark-mode .bg-danger {
+        background-color: var(--neon-danger) !important;
+    }
+    
+    body.dark-mode .bg-warning {
+        background-color: var(--neon-warning) !important;
+    }
+    
+    body.dark-mode .bg-info {
+        background-color: var(--neon-info) !important;
+    }
+    
+    body.dark-mode .border-primary {
+        border-color: var(--neon-primary) !important;
+    }
+    
+    body.dark-mode .border-success {
+        border-color: var(--neon-success) !important;
+    }
+    
+    body.dark-mode .border-danger {
+        border-color: var(--neon-danger) !important;
+    }
+    
+    body.dark-mode .border-warning {
+        border-color: var(--neon-warning) !important;
+    }
+    
+    body.dark-mode .border-info {
+        border-color: var(--neon-info) !important;
+    }
+}</style>
